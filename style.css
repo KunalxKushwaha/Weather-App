@@ -130,7 +130,7 @@ body::before{
 .weather-condition-cont{
     display: flex;
     /* flex-direction: row; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .condition-item{
@@ -190,3 +190,19 @@ body::before{
    
 }
 
+/* Section Message */
+.message-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 37px;
+}
+.message-section img{
+    height: 230px;
+    width: fit-content;
+}
+
+/*End Section Message */
