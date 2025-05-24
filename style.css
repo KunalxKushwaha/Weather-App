@@ -36,8 +36,8 @@ body::before{
 }
 .main-container{
     
-    width: 300px;
-    height: 496px;
+    width: 450px;
+    height: 500px;
     z-index: 1;
     background: linear-gradient( to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
     border-radius: 12px;
@@ -92,13 +92,16 @@ body::before{
 /* End inp container */
 
 .weather-info{
-   
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .location-date-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 22px;
 }
 
 .location{
@@ -107,3 +110,83 @@ body::before{
     gap: 6px;
 
 }
+
+.weather-summ-cont{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-summ-img{
+    width: 120px;
+    height: 120px;
+}
+
+.weather-summ-info{
+    text-align: end;
+}
+
+.weather-condition-cont{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+
+.condition-item{
+   
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.condition-item span svg{
+   height: 35px;
+   width: 35px;
+}
+
+.forecast-item-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+ .forecast-item-cont::-webkit-scrollbar {
+    display: block;
+    height: 10px;
+}
+.forecast-item-cont::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
+.forecast-item-cont::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 99px;
+} 
+.forecast-item{
+    
+    min-width: 90px;
+    background: rgb(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+.forecast-item:hover{
+    background: rgb(255, 255, 255, 0.15);
+}
+
+.forecast-item-image{
+    width: 35px;
+    height: 35px;
+   
+}
+
