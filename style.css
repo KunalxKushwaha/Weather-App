@@ -6,6 +6,7 @@
     box-sizing: border-box; 
       font-family: "Poppins", sans-serif;
       color: white;
+      font-weight: 600;
 }
 
 body{
@@ -30,6 +31,9 @@ body::before{
     backdrop-filter: blur(10px);
 }
 
+.regular-txt{
+    font-weight: 400;
+}
 .main-container{
     
     width: 300px;
@@ -45,6 +49,7 @@ body::before{
 
 .inp-cont{
     position: relative;
+    margin-bottom: 25px;
 }
 .inp-city{
     width: 100%;
@@ -85,3 +90,20 @@ body::before{
 
 }
 /* End inp container */
+
+.weather-info{
+   
+}
+
+.location-date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
