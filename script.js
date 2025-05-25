@@ -28,15 +28,15 @@ cityInput.addEventListener('keydown', (event) => {
 });
 
  async function getFetchData(endPoint, city) {
-    const apiKeyURL= `https://api.openweathermap.org/data/2.5/forecast?q=Meerut&appid=${apiKey}&units=metric`;
-    const response = await fetch(apiKeyURL)
+    const apiURL= `https://api.openweathermap.org/data/2.5/${endPoint}?q=${city}&appid=${apiKey}&units=metric`;
+    const response = await fetch(apiURL)
         return response.json()
 }
 async function updateWeather(Weather,city) {
     const weatherData = await getFetchData(Weather,city);
 
-    if(weatherData.cod !== '200') {
-        showDislplaySection(notFound)
-    }
+    // if(weatherData.cod !== '200') {
+    //     showDislplaySection(notFound)
+    // }
     console.log(weatherData);
 }
