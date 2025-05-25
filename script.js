@@ -1,7 +1,9 @@
 const cityInput = document.querySelector('.inp-city');
 const searchButton = document.querySelector('.srch-button');
 const apiKey = `f75a076ddfd3036a93271f06bccada56`
+const weatherInfo = document.querySelector('.weather-info');
 const notFound = document.querySelector('.not-found');
+const searchCity = document.querySelector('.search-city');
 
 searchButton.addEventListener('click', () => {
     if(cityInput.value.trim() === '') {
@@ -37,8 +39,22 @@ cityInput.addEventListener('keydown', (event) => {
 async function updateWeather(Weather,city) {
     const weatherData = await getFetchData(Weather,city);
 
-    // if(weatherData.cod !== '200') {
-    //     showDislplaySection(notFound)
-    // }
-    console.log(weatherData);
+    if(weatherData.cod !== '200') {
+        showDislplaySection(notFound)
+    }
+    
+      else{
+          showDislplaySection(weatherInfo);
+        console.log(weatherData);
+      }
+      
+        
+    
+  
+}
+
+function showDislplaySection(section) {
+    [weatherInfo,searchCity,notFound].forEach(section => section.style.display = "none");
+
+    section.style.display = "flex";
 }
