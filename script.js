@@ -1,9 +1,19 @@
 const cityInput = document.querySelector('.inp-city');
 const searchButton = document.querySelector('.srch-button');
 const apiKey = `f75a076ddfd3036a93271f06bccada56`
+
 const weatherInfo = document.querySelector('.weather-info');
 const notFound = document.querySelector('.not-found');
 const searchCity = document.querySelector('.search-city');
+
+const Countrytxt = document.querySelector('.country-txt');
+const Temptxt = document.querySelector('.temp-txt');
+const Conditiontxt = document.querySelector('.condition-text');
+const Humiditytxt = document.querySelector('.Humidity-value-txt');
+const Pressuretxt = document.querySelector('.Pressure-value-txt');
+const Windtxt = document.querySelector('.Wind-value-txt');
+const weathjerSummaryImg = document.querySelector('.weather-summ-img');
+const currentDateTxt = document.querySelector('.current-date-txt');
 
 searchButton.addEventListener('click', () => {
     if(cityInput.value.trim() === '') {
@@ -35,21 +45,61 @@ cityInput.addEventListener('keydown', (event) => {
     const apiURL= `https://api.openweathermap.org/data/2.5/${endPoint}?q=${city}&appid=${apiKey}&units=metric`;
     const response = await fetch(apiURL)
         return response.json()
+
+
 }
-async function updateWeather(Weather,city) {
-    const weatherData = await getFetchData(Weather,city);
+
+function getWeatherIcon(id) {
+    if(id >= 200 && id <= 232) {
+        return 'thunderstorm';
+    } else if(id >= 300 && id <= 321) {
+        return 'drizzle';
+    } else if(id >= 500 && id <= 531) {
+        return 'rain';
+    } else if(id >= 600 && id <= 622) {
+        return 'snow';
+    } else if(id >= 701 && id <= 781) {
+        return 'atmosphere';
+    } else if(id === 800) {
+        return 'clear';
+    } else if(id >= 801 && id <= 804) {
+        return 'clouds';
+    } else {
+        return 'unknown';
+    }
+}
+
+function getcurrentDate() {
+    const currentDate = new Date();
+    const options = { weekday: 'short', month: 'short', day: '2-digit', year: '2-digit' };
+    return(currentDate.toLocaleDateString('en-GB', options));
+}
+
+async function updateWeather(endPoint,city) {
+    const weatherData = await getFetchData(endPoint,city);
 
     if(weatherData.cod !== '200') {
         showDislplaySection(notFound)
+        return;
     }
-    
-      else{
-          showDislplaySection(weatherInfo);
-        console.log(weatherData);
-      }
-      
-        
-    
+         console.log(weatherData);
+      const {
+       city: { name: cityName },
+       list :[{main: { temp, humidity, pressure },
+               weather: [{ id, main: weatherMain, description }],
+               wind: { speed }}]
+} = weatherData;
+
+       Countrytxt.textContent = cityName;
+       Temptxt.textContent = `${Math.round(temp)}°C`;
+       Conditiontxt.textContent = weatherMain;
+       Humiditytxt.textContent = `${humidity}%`;
+       Pressuretxt.textContent = `${pressure} hPa`;
+       Windtxt.textContent = `${Math.round(speed)} m/s`;
+       currentDateTxt.textContent = getcurrentDate()
+         weathjerSummaryImg.src = `assets/assets/weather/${getWeatherIcon(id)}.svg`;
+         
+        showDislplaySection(weatherInfo);
   
 }
 
