@@ -14,6 +14,7 @@ const Pressuretxt = document.querySelector('.Pressure-value-txt');
 const Windtxt = document.querySelector('.Wind-value-txt');
 const weathjerSummaryImg = document.querySelector('.weather-summ-img');
 const currentDateTxt = document.querySelector('.current-date-txt');
+const forecastItems = document.querySelector('.forecast-item-cont');
 
 searchButton.addEventListener('click', () => {
     if(cityInput.value.trim() === '') {
@@ -99,29 +100,44 @@ async function updateWeather(endPoint,city) {
        currentDateTxt.textContent = getcurrentDate()
        weathjerSummaryImg.src = `assets/assets/weather/${getWeatherIcon(id)}.svg`;
          
-        // await updateForecastinfo(city)
+       
                  const TimeTaken = "12:00:00";
                  const TodayDate = new Date().toISOString().split('T')[0];
+                 forecastItems.innerHTML = ''; // Clear previous forecast items
              weatherData.list.forEach(forecastWeather =>{
                 if(forecastWeather.dt_txt.includes(TimeTaken) && !forecastWeather.dt_txt.includes(TodayDate)) {
                     console.log(forecastWeather);
+                     updateForecastItems(forecastWeather)
                 }
     })
-    
+       
         showDislplaySection(weatherInfo);
   
 }
 
-// async function updateForecastinfo(city){
-//     // const forecastData = await getFetchData(endPoint,city)
-   
+function updateForecastItems(weatherData) {
+    console.log(weatherData);
+    const {
+        dt_txt = date,
+        main: { temp, },
+        weather: [{ id }],
+        wind: { speed }
+    } = weatherData;
+    
+const DateTaken = new Date(dt_txt);
+    const options = {  month: 'short', day: '2-digit' };
+    const formattedDate = DateTaken.toLocaleDateString('en-US', options);
 
+    const forecastItem = `
+            <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">${formattedDate}</h5>
+                    <img src="assets/assets/weather/${getWeatherIcon(id)}.svg" class="forecast-item-image">
+                    <h5 class="forecast-item-temp">${Math.round(temp)}°C</h5>
+            </div>
+    `
 
-//      weatherData.list.forEach(forecastWeather =>{
-//         console.log(weahteerData);
-//     })
-//     console.log(TodayDate);
-// }
+    forecastItems.insertAdjacentHTML('beforeend', forecastItem);
+}
 
 function showDislplaySection(section) {
     [weatherInfo,searchCity,notFound].forEach(section => section.style.display = "none");
