@@ -97,11 +97,31 @@ async function updateWeather(endPoint,city) {
        Pressuretxt.textContent = `${pressure} hPa`;
        Windtxt.textContent = `${Math.round(speed)} m/s`;
        currentDateTxt.textContent = getcurrentDate()
-         weathjerSummaryImg.src = `assets/assets/weather/${getWeatherIcon(id)}.svg`;
+       weathjerSummaryImg.src = `assets/assets/weather/${getWeatherIcon(id)}.svg`;
          
+        // await updateForecastinfo(city)
+                 const TimeTaken = "12:00:00";
+                 const TodayDate = new Date().toISOString().split('T')[0];
+             weatherData.list.forEach(forecastWeather =>{
+                if(forecastWeather.dt_txt.includes(TimeTaken) && !forecastWeather.dt_txt.includes(TodayDate)) {
+                    console.log(forecastWeather);
+                }
+    })
+    
         showDislplaySection(weatherInfo);
   
 }
+
+// async function updateForecastinfo(city){
+//     // const forecastData = await getFetchData(endPoint,city)
+   
+
+
+//      weatherData.list.forEach(forecastWeather =>{
+//         console.log(weahteerData);
+//     })
+//     console.log(TodayDate);
+// }
 
 function showDislplaySection(section) {
     [weatherInfo,searchCity,notFound].forEach(section => section.style.display = "none");
