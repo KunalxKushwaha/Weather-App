@@ -109,6 +109,15 @@ Connect to Netlify / Vercel or enable GitHub Pages
 
 ---
 
+
+
+📝 License
+
+This project is licensed under the MIT License.
+
+
+---
+
 # 🤛♂️ Author- Kunal Kushwaha
 
 GitHub: @KunalKushwaha
@@ -117,16 +126,6 @@ Twitter: @kunalkushwaha
 
 LinkedIn: linkedin.com/in/kunalkushwaha
 
-
-
----
-
-📝 License
-
-This project is licensed under the MIT License.
-
-
----
 
 ⭐️ Show Your Support
 
