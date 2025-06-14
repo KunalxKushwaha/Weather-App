@@ -61,7 +61,7 @@ weather-app/
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/weather-web-app.git
+git clone https://github.com/KunalxKushwaha/Weather-app.git
 cd weather-web-app
 
 2. Add your OpenWeatherMap API key
