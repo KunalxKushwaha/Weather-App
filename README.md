@@ -1,4 +1,4 @@
-🌦️ Weather Web Application
+# 🌦️ Weather Web Application
 
 A sleek and responsive web-based Weather Application that displays real-time weather data for any city using HTML, CSS, and JavaScript. The app fetches live data from a weather API and displays temperature, weather conditions, humidity, wind speed, and more. It’s fully responsive and mobile-friendly.
 
