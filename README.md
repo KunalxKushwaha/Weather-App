@@ -87,7 +87,8 @@ Just open index.html in your preferred web browser.
 
 This project is deployed using GitHub Pages / Vercel / Netlify.
 
-> 🟢 Live at: https://your-deployed-site-link.com
+> 🟢 Live at: https://weather-app-five-gamma-22.vercel.app/
+
 
 
 
