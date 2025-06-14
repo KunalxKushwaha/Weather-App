@@ -6,7 +6,11 @@ A sleek and responsive web-based Weather Application that displays real-time wea
 
 🚀 Live Demo
 
-🔗 Click here to visit the live app
+
+Below Is the Website Link(deployed Version) that will Lead you to your Personal Weather Forecast Application:-<br>
+
+🔗 Click here to visit the live app:
+https://weather-app-five-gamma-22.vercel.app/
 
 
 ---
@@ -128,7 +132,3 @@ This project is licensed under the MIT License.
 If you liked this project, feel free to ⭐️
 
 
-
-
-Below Is the Website Link(deployed Version) that will Lead you to your Personal Weather Forecast Application:-<br>
-https://weather-app-five-gamma-22.vercel.app/
