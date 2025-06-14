@@ -110,7 +110,7 @@ Connect to Netlify / Vercel or enable GitHub Pages
 
 # 🤛♂️ Author- Kunal Kushwaha
 
-GitHub: @kunalkushwaha
+GitHub: @KunalKushwaha
 
 Twitter: @kunalkushwaha
 
