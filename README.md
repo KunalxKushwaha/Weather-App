@@ -61,8 +61,8 @@ weather-app/
 
 1. Clone the repository
 
-git clone https://github.com/KunalxKushwaha/Weather-app.git
-cd weather-web-app
+git clone https://github.com/KunalxKushwaha/Weather-App.git
+cd weather-App
 
 2. Add your OpenWeatherMap API key
 
@@ -104,9 +104,7 @@ Connect to Netlify / Vercel or enable GitHub Pages
 
 ---
 
-🤛\200d♂️ Author
-
-Kunal Kushwaha
+# 🤛♂️ Author- Kunal Kushwaha
 
 GitHub: @kunalkushwaha
 
