@@ -48,7 +48,7 @@ OpenWeatherMap API	Weather data
 
 ---
 
-📂 Project Structure
+<h3>📂 Project Structure</h3>
 
 weather-app/
 ├── index.html
