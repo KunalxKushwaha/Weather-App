@@ -123,7 +123,7 @@ This project is licensed under the MIT License.
 
 <b>Twitter:</b> @kunalkushwaha
 
-LinkedIn: linkedin.com/in/kunalkushwaha
+<b>LinkedIn:</b> linkedin.com/in/kunalkushwaha
 
 
 ⭐️ Show Your Support
