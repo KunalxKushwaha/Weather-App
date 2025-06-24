@@ -83,7 +83,7 @@ Just open index.html in your preferred web browser.
 
 ---
 
-🌐 Deployment
+<h3>🌐 Deployment</h3>
 
 This project is deployed using GitHub Pages / Vercel / Netlify.
 
