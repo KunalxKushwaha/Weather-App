@@ -102,7 +102,7 @@ Connect to Netlify / Vercel or enable GitHub Pages
 
 ---
 
-📸 Preview
+<h3>📸 Preview</h3>
 
 <img src = "assets/SS.png"/>
 
