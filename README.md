@@ -119,8 +119,6 @@ This project is licensed under the MIT License.
 
 ---
 
-# 🤛♂️ Author- Kunal Kushwaha
-
 GitHub: @KunalKushwaha
 
 Twitter: @kunalkushwaha
@@ -131,5 +129,9 @@ LinkedIn: linkedin.com/in/kunalkushwaha
 ⭐️ Show Your Support
 
 If you liked this project, feel free to ⭐️
+
+
+
+# 🤛♂️ Author- Kunal Kushwaha
 
 
