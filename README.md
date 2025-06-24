@@ -112,7 +112,7 @@ Connect to Netlify / Vercel or enable GitHub Pages
 
 
 
-📝 License
+<h3>📝 License</h3>
 
 This project is licensed under the MIT License.
 
