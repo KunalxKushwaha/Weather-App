@@ -119,7 +119,7 @@ This project is licensed under the MIT License.
 
 ---
 
-<h3>GitHub:</h3> @KunalKushwaha
+<b>GitHub:</b> @KunalKushwaha
 
 Twitter: @kunalkushwaha
 
