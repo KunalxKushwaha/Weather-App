@@ -61,7 +61,7 @@ weather-app/
 
 ---
 
-⚙️ Setup Instructions
+<h3>⚙️ Setup Instructions</h3>
 
 1. Clone the repository
 
