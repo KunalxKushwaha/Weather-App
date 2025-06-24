@@ -121,7 +121,7 @@ This project is licensed under the MIT License.
 
 <b>GitHub:</b> @KunalKushwaha
 
-Twitter: @kunalkushwaha
+<b>Twitter:</b> @kunalkushwaha
 
 LinkedIn: linkedin.com/in/kunalkushwaha
 
