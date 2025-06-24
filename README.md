@@ -35,7 +35,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 ---
 
-💠 Tech Stack
+<h3>💠 Tech Stack</h3>
 
 Technology	Purpose
 
