@@ -15,7 +15,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 ---
 
-📌 Features
+<h3>📌 Features</h3>
 
 🌍 Search for current weather by city name
 
