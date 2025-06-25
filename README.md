@@ -37,7 +37,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 <h3>💠 Tech Stack</h3>
 
-Technology	Purpose
+<b>Technology	Purpose</b>
 
 HTML	Page structure
 CSS	Styling & layout
