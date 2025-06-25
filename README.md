@@ -40,7 +40,7 @@ https://weather-app-five-gamma-22.vercel.app/
 <b>Technology	Purpose</b>
 
 HTML	Page structure<br>
-CSS	Styling & layout
+CSS	Styling & layout<br>
 JavaScript	Logic & API handling
 OpenWeatherMap API	Weather data
 
