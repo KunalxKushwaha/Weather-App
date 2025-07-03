@@ -21,7 +21,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 🌡️ Display temperature in Celsius or Fahrenheit.
 
-☁️ Shows weather description and icon
+☁️ Shows weather description and icon.
 
 💧 Displays humidity and wind speed
 
