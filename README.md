@@ -23,11 +23,11 @@ https://weather-app-five-gamma-22.vercel.app/
 
 ☁️ Shows weather description and icon.
 
-💧 Displays humidity and wind speed
+💧 Displays humidity and wind speed.
 
-📱 Responsive design for all screen sizes
+📱 Responsive design for all screen sizes.
 
-⚙️ Error handling for invalid city names
+⚙️ Error handling for invalid city names.
 
 🔄 Real-time data using OpenWeatherMap API.
 
