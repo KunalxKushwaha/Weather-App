@@ -17,7 +17,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 <h3>📌 Features</h3>
 
-🌍 Search for current weather by city name
+🌍 Search for current weather by city name.
 
 🌡️ Display temperature in Celsius or Fahrenheit
 
