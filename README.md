@@ -29,7 +29,7 @@ https://weather-app-five-gamma-22.vercel.app/
 
 ⚙️ Error handling for invalid city names
 
-🔄 Real-time data using OpenWeatherMap API
+🔄 Real-time data using OpenWeatherMap API.
 
 
 
